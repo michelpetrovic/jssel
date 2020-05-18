@@ -22,7 +22,7 @@ Given the markup
 ```
 and assuming you want to select `<article>`, `<h4> -> text` and all `<span>` elments, you could do the following:
 
-`const elmts = jsSel.select(e, '^article h4;val ^[1];>[1];[span]')`
+`const elmts = jsSel.select(document.getElementById('start'), '^article h4;val ^[1];>[1];[span]')`
 
 The result will be the array:
 ```
